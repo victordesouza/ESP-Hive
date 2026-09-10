@@ -1,7 +1,7 @@
 # ESP-Hive
 Um cluster para programação paralela em ESP32 no FreRTOS.
 
-![[logo.jpg]]
+![Logo do projeto](logo.jpg)
 
 ### 1. Topologia Física — Estrela Wi-Fi (Master-Worker)
 
