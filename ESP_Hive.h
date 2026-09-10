@@ -1,4 +1,3 @@
-/* EspDeviceInfo.h */
 #ifndef ESP_Hive
 #define ESP_Hive
 #include <Arduino.h> //Para tipo String
