@@ -14,6 +14,7 @@ struct table_entry {
 
 
 int my_rank();
+String my_MAC();
 String get_IP(int ID_ESP);
 
 

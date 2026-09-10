@@ -4,7 +4,7 @@
 
 
 const table_entry MAC_table[] = {
-  {"98:CD:AC:50:27:98", "192.0.0.1",1}
+  {"78:21:84:79:EF:88", "192.0.0.1",2}
 };
 
 const int num_ESPs = sizeof(MAC_table) / sizeof(MAC_table[0]);
@@ -33,7 +33,7 @@ int my_rank() {
 }
 
 //Retorna o MAC da ESP32. Útil para preencher a tabela de MAC
-int my_MAC(){
+String my_MAC(){
   uint8_t mac[6];
   esp_read_mac(mac, ESP_MAC_WIFI_STA); 
 
@@ -44,7 +44,7 @@ int my_MAC(){
   //Converte para o tipo String do Arduino.h 
   String mac_string = String(mac_str);
 
-  return mac_string;
+  return mac_str;
 }
 
 //Retorna o IP associado a um ID
