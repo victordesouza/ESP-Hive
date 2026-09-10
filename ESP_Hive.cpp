@@ -4,7 +4,8 @@
 
 
 const table_entry MAC_table[] = {
-  {"78:21:84:79:EF:88", "192.0.0.1",2}
+  {"EC:64:C9:5E:D3:E8", "192.0.0.1",1},
+  {"78:21:84:79:EF:88", "192.0.0.2",2}
 };
 
 const int num_ESPs = sizeof(MAC_table) / sizeof(MAC_table[0]);
