@@ -1,4 +1,3 @@
-/* EspDeviceInfo.cpp */
 #include "ESP_Hive.h"
 #include <esp_mac.h>
 

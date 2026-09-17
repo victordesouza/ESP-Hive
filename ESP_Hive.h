@@ -2,6 +2,7 @@
 #define ESP_Hive
 #include <Arduino.h> //Para tipo String
 
+#define MAX_TASKS 5
 
 
 struct table_entry {
