@@ -3,8 +3,9 @@
 
 
 const table_entry MAC_table[] = {
-  {"EC:64:C9:5E:D3:E8", "192.0.0.1",1},
-  {"78:21:84:79:EF:88", "192.0.0.2",2}
+  {"EC:64:C9:5E:D3:E8",IPAddress(192,0,0,1),1},
+  {"78:21:84:79:EF:88",IPAddress(192,0,0,2),2},
+  {"98:CD:AC:50:27:98",IPAddress(192,0,0,3),3}
 };
 
 const int num_ESPs = sizeof(MAC_table) / sizeof(MAC_table[0]);
@@ -48,15 +49,13 @@ String my_MAC(){
 }
 
 //Retorna o IP associado a um ID
-String get_IP(int ID_ESP){
-
+IPAddress get_IP(int ID_ESP){
   for (int i = 0; i < num_ESPs; i++)
   {
     if (ID_ESP == MAC_table[i].ID)
     {
-      return String(MAC_table[i].IP);
+      return MAC_table[i].IP;
     }
   }
-
-  return String("IP nao encontrado");
+  return IPAddress(0,0,0,0);
 }

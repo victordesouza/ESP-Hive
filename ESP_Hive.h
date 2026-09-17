@@ -1,13 +1,12 @@
 #ifndef ESP_Hive
 #define ESP_Hive
 #include <Arduino.h> //Para tipo String
-
-#define MAX_TASKS 5
+#include <Ethernet.h>
 
 
 struct table_entry {
   const char* MAC_address;
-  const char* IP;
+  IPAddress IP;
   int ID;
 };
 
@@ -15,7 +14,7 @@ struct table_entry {
 
 int my_rank();
 String my_MAC();
-String get_IP(int ID_ESP);
+IPAddress get_IP(int ID_ESP);
 
 
 
