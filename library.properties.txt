@@ -1,0 +1,10 @@
+name=ESP-Hive
+version=0.1.0
+author=UERGS
+maintainer=Your Name <email@example.com>
+sentence=Funções para o cluster ESP32 ESP-Hive
+paragraph=Desenvolvido
+category=Device Control
+url=https://github.com/victordesouza/ESP-Hive
+architectures=esp32
+includes=ESP_Hive.h

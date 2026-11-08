@@ -1,3 +1,8 @@
+# ESP-Hive
+Um cluster para programação paralela em ESP32 no FreRTOS.
+
+![Logo do projeto](logo.jpg)
+
 ### 1. Topologia Física — Estrela Wi-Fi (Master-Worker)
 
 > 1 Master (Access Point) + 4 Workers, todos conectados via Wi-Fi. O Master sobe um Soft AP e os Workers conectam nele.
